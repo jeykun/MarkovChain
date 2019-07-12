@@ -1,5 +1,5 @@
 # MarkovChain
-This class allows to make random sortition of any number of elements of a Markov Chain, just by setting the initial distribution and probability matrix and then executing the method "export( )".
+This class allows to make random sequence of any number of elements of a Markov Chain, just by setting the initial distribution and probability matrix and then executing the method "export( )".
 
 Example:
 
@@ -20,7 +20,7 @@ prob = [
 cm = MarkovChain(dist,prob)
 
 print(cm.export(50)) # here we get 51 values of the Markov Chain: the first one is from the initial distribution
-                     # the others are from the transition probabilities, given the previous distribution
+                     # the others are from the transition probabilities, given the previous distribution.
 
 
-To get the [dist] and [prob] correctly, just input [cm.get('dist') or cm.get('prob')].
+To recover the [dist] and [prob] correctly, just input [cm.get('dist') or cm.get('prob')].
