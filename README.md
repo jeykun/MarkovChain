@@ -5,13 +5,17 @@ Example:
 
 dist = [4,5,6] # three states, named zero, one and two: the weights are the proportion among them
 
-prob = [[4,4,8],
+prob = [
+
+        [4,4,8],
 
         [2,2,5],
         
-        [1,1,4]] # three states: these are the wheights of probability of transition among them
+        [1,1,4]
         
-                 # element prob[1,2] means the probability of transition between the state 1 to the state 2
+        ] # three states: these are the wheights of probability of transition among them
+        
+          # element prob[1,2] means the probability of transition between the state 1 to the state 2
                  
 cm = MarkovChain(dist,prob)
 
