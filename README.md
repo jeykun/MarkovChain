@@ -20,6 +20,7 @@ prob = [
 cm = MarkovChain(dist,prob)
 
 print(cm.export(50)) # here we get 51 values of the Markov Chain: the first one is from the initial distribution
+
                      # the others are from the transition probabilities, given the previous distribution.
 
 
