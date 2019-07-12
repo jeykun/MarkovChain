@@ -3,6 +3,9 @@ This class allows to make random sequence of any number of elements of a Markov 
 
 Example:
 
+
+from markov_chain import MarkovChain
+
 dist = [4,5,6] # three states, named zero, one and two: the weights are the proportion among them
 
 prob = [
